@@ -10,11 +10,12 @@ public class Punto33 {
 
     public static ArrayList<Integer> encontrarLista(int[] lista1, int[] lista2){
         ArrayList<Integer> res = new ArrayList<Integer>(); //1
-        if(lista1.length >= lista2.length){ // 3 + 1
+        encontrarListaAux(lista1,lista2,res);
+        /* if(lista1.length >= lista2.length){ // 3 + 1
             encontrarListaAux(lista1,lista2,res);
         }else{
             encontrarListaAux(lista2,lista1,res);
-        }
+        }*/
         return res;
     }
 
